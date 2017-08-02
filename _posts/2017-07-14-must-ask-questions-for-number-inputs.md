@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Must-Ask Questions for Number Inputs"
-date: "2017-07-14 09:00:00"
+title: Must-Ask Questions for Number Inputs
+date: 2017-07-14 09:00:00
+description: As a data primitive, it's easy to forget that there are a number of things you can mistakenly assume about numbers as an input to any function. Here are (all?) the questions you have to ask.
 type: post
-categories: coding
 tags:
 ---
 

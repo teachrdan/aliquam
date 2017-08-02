@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Command Line Cop"
-date: "2017-06-21 09:00:00"
+title: Command Line Cop
+date: 2017-06-21 09:00:00
+description: An amazing game idea to teach new users how to navigate the command line.
 type: post
-categories: coding
 tags:
 ---
 
