@@ -10,6 +10,7 @@ tags:
 
 As a data primitive, it's easy to forget that there are a number of things you can mistakenly assume about numbers as an input to any function. Here's everything you have to know about your number inputs. (JavaScript edition)
 
+
 0. Will it always be a number?
 
   * Don't assume your input will always be a number even if it's supposed to be. Add validation (and tests!) wherever needed. This is especially important in JavaScript, where operations like **10 > 'a'** evaluate to a boolean, rather than throwing an error.
@@ -22,12 +23,12 @@ As a data primitive, it's easy to forget that there are a number of things you c
 
 0. Can it be NaN, infinity or any other non-number number?
 
-  * You won't be surprised that **Infinity**, **Number.POSITIVE_INFINITY** and **Number.NEGATIVE_INFINITY** are numbers. But you *might* be surprised that **typeof NaN** evaluates to **'number'**. Your code should be able to handle any of these numbers.
+  * You won't be surprised that **Infinity**, **Number.POSITIVE_INFINITY** and **Number.NEGATIVE_INFINITY** are numbers. But you *might* be surprised that **typeof NaN** evaluates to **'number'**. Your code should be able to handle any of these counter-intuitive numbers.
 
 
 0. Will it always be an integer?
 
-	* JavaScript's [handling of decimals](https://stackoverflow.com/questions/10473994/javascript-adding-decimal-numbers-issue) blows darts. If your function is doing math on its number inputs, account for non-integer values if they may occur.
+	* JavaScript's [handling of decimals](https://stackoverflow.com/questions/10473994/javascript-adding-decimal-numbers-issue) blows darts. If your function is doing math on its number inputs, account for potential non-integer values.
 
 
 0. Is it big enough to cause a stack overflow?
