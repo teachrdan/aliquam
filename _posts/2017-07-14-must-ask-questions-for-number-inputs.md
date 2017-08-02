@@ -8,9 +8,7 @@ tags:
     - coding
 ---
 
-### Here's everything you have to know about your number inputs (JavaScript edition)
-
-As a data primitive, it's easy to forget that there are a number of things you can mistakenly assume about numbers as an input to any function. Here are (all?) the questions you have to ask:
+As a data primitive, it's easy to forget that there are a number of things you can mistakenly assume about numbers as an input to any function. Here's everything you have to know about your number inputs. (JavaScript edition)
 
 0. Will it always be a number?
 
@@ -24,12 +22,12 @@ As a data primitive, it's easy to forget that there are a number of things you c
 
 0. Can it be NaN, infinity or any other non-number number?
 
-  * You won't be surprised that **Infinity**,  **Number.POSITIVE_INFINITY** and **Number.NEGATIVE_INFINITY** are numbers. But you *might* be surprised that **typeof NaN** evaluates to **'number'**. Your code should be able to handle any of these numbers.
+  * You won't be surprised that **Infinity**, **Number.POSITIVE_INFINITY** and **Number.NEGATIVE_INFINITY** are numbers. But you *might* be surprised that **typeof NaN** evaluates to **'number'**. Your code should be able to handle any of these numbers.
 
 
 0. Will it always be an integer?
 
-	* We all know that **0.4 + 0.2 = 0.6000000000000001**. JavaScript's handling of decimals blows darts. If your function is doing math on its number inputs, account for non-integer values if they may occur.
+	* JavaScript's [handling of decimals](https://stackoverflow.com/questions/10473994/javascript-adding-decimal-numbers-issue) blows darts. If your function is doing math on its number inputs, account for non-integer values if they may occur.
 
 
 0. Is it big enough to cause a stack overflow?
