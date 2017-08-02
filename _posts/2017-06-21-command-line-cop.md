@@ -5,6 +5,8 @@ date: 2017-06-21 09:00:00
 description: An amazing game idea to teach new users how to navigate the command line.
 type: post
 tags:
+    - command line
+    - education
 ---
 
 Here's an amazing idea for an educational game.
