@@ -4,8 +4,4 @@ title: About
 description: More information about me and this website.
 ---
 
-I am ...
-
-## Contact form
-
-{% include contact_form.html %}
+I am an engineer and coffee enthusiast based in Oakland, California.
