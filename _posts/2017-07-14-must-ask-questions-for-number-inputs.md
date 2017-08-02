@@ -6,7 +6,6 @@ description: As a data primitive, it's easy to forget that there are a number of
 type: post
 tags:
     - coding
-    - numbers
 ---
 
 ### Here's everything you have to know about your number inputs (JavaScript edition)
