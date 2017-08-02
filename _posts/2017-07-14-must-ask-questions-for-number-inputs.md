@@ -14,7 +14,7 @@ As a data primitive, it's easy to forget that there are a number of things you c
 
 0. Will it always be a number?
 
-  * Don't assume your input will always be a number even if it's supposed to be. Add validation (and tests!) wherever needed. This is especially important in JavaScript, where operations like ``10 > 'a'`` evaluate to a boolean, rather than throwing an error.
+  * Don't assume your input will always be a number even if it's supposed to be. Add validation (and tests!) wherever needed. This is especially important in JavaScript, where operations like **10 > 'a'** evaluate to a boolean, rather than throwing an error.
 
 
 0. Can the number be negative?
@@ -24,22 +24,22 @@ As a data primitive, it's easy to forget that there are a number of things you c
 
 0. Can it be NaN, infinity or any other non-number number?
 
-	* You won't be surprised that ``Infinity``,  ``Number.POSITIVE_INFINITY`` and ``Number.NEGATIVE_INFINITY`` are numbers. But you *might* be surprised that ``typeof NaN`` evaluates to ``'number'``. Your code should be able to handle any of these numbers.
+  * You won't be surprised that **Infinity**,  **Number.POSITIVE_INFINITY** and **Number.NEGATIVE_INFINITY** are numbers. But you *might* be surprised that **typeof NaN** evaluates to **'number'**. Your code should be able to handle any of these numbers.
 
 
 0. Will it always be an integer?
 
-	* We all know that ``0.4 + 0.2 = 0.6000000000000001``. JavaScript's handling of decimels blows darts. If your function is doing math on its number inputs, account for non-integer values if they may occur.
+	* We all know that **0.4 + 0.2 = 0.6000000000000001**. JavaScript's handling of decimals blows darts. If your function is doing math on its number inputs, account for non-integer values if they may occur.
 
 
 0. Is it big enough to cause a stack overflow?
 
-  * Self-explanatory. If you're dealing with values that may cause a stack overflow, use alogorithms or libraries to deal with them.
+  * Self-explanatory. If you're dealing with values that may cause a stack overflow, use algorithms or libraries to deal with them.
 
 
 0. Will it always be a decimal?
 
-  * Ok, this is mostly for job interviews. (**Note: All of these questions are good to ask when coding in job interviews!**) But can you assume inputs won't be in the other two forms of numbers accepted by vanilla JS, hexadecimal and binary? Remember that ``parseint()`` takes [any radix between 2 and 36](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt) as its second parameter!
+  * Ok, this is mostly for job interviews. (Note: *All of these questions* are good to ask when coding in job interviews!) But can you assume inputs won't be in the other two forms of numbers accepted by vanilla JS, hexadecimal and binary? Remember that **parseint()** takes [any radix between 2 and 36](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt) as its second parameter!
 
 
 0. For collections of numbers, will the numbers be unique?
